@@ -8,7 +8,7 @@ export class CatsController {
 
   @Post('create')
   create(@Body() createCatDto: CreateCatDto) {
-    this.catsService.create(createCatDto);
+    return this.catsService.create(createCatDto);
   }
 
   @Get('findAll')
